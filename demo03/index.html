@@ -19,6 +19,34 @@
 			float: left;
 			list-style: none;
 			padding: 2px;
+			border: 1px solid #ccc;
+			margin-right: 4px;
+			width: 20px;
+			height: 20px;
+		}
+		.demo li:nth-last-child(3) {
+			background-color: #0f0;
+		}
+		.demo li:nth-of-type(3) {
+			background-color: #0f0;
+		}
+		.demo li:empty {
+			background-color: #0f0;
+		}
+		.odd {
+
+		}
+		.even {
+
+		}
+		.demo a {
+			display: block;
+			width: 20px;
+			height: 20px;
+			text-align: center;
+			border-radius: 10px;
+			background-color: #f36;
+			text-decoration: none;
 		}
 		.clearfix {
 			clear: both;
@@ -29,8 +57,9 @@
 <body>
 	<div class="demo clearfix">
 		<ul class="clearfix">
-			<li><a href="">1</a></li>
-			<li><a href="">2</a></li>
+			<p>0</p>
+			<li class="odd"><a href="">1</a></li>
+			<li class="even"><a href="">2</a></li>
 			<li><a href="">3</a></li>
 			<li><a href="">4</a></li>
 			<li><a href="">5</a></li>
@@ -39,6 +68,11 @@
 			<li><a href="">8</a></li>
 			<li><a href="">9</a></li>
 			<li><a href="">10</a></li>
+		</ul>
+	</div>
+	<div class="demo clearfix">
+		<ul class="clearfix">
+			<li class="odd"></li>
 		</ul>
 	</div>
 </body>

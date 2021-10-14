@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>伪元素</title>
+	<style type="text/css">
+		.demo {
+			border: 1px solid #ccc;
+			width: 300px;
+			margin: 50px auto;
+			padding: 10px;
+		}
+		.demo:first-letter {
+			font-size: 40px;
+			font-weight: bold;
+			float: left;
+		}
+		.demo:first-line {
+			color: #f00;
+		}
+		
+		.demo01 {
+			width: 300px;
+			margin: 50px auto;		
+			border: 1px solid #ccc;
+			padding: 10px;
+			text-align: center;
+
+		}
+		.demo01:before {
+			content: url('./coin.png');
+			display: block;
+		}
+		.demo01:after {
+			content: url('./zhang.png');
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<div class="demo">
+		翻译工具 文本 对话 应用 商用版 帮助 广泛使用的短语 最受欢迎的 基本 社会 旅行 餐饮 紧急 日期和数字 科技 你好 谢谢 早上好 你好吗? 见到你很高兴 不客气 再见 晚安© 20...
+	</div>
+	<div class="demo01">
+		玩转css3特性
+	</div>
+</body>
+</html>

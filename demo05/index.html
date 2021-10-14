@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>border-radius</title>
+	<style type="text/css">
+		.demo {
+			width: 200px;
+			height: 200px;
+			border-radius: 1px solid #ccc;
+			background-color: #F66;
+			margin: 50px auto;
+			/*border-radius: 50%;*/
+			border-top-left-radius: 200px 50px;
+			/*border-top-right-radius: 50%;*/
+			/*border-bottom-right-radius: 50%;*/
+		}
+		.dialog {
+			width: 300px;
+			background-color: #6a6;
+			border-radius: 6px;
+			color: #fff;
+			position: relative;
+			padding: 10px;
+			line-height: 25px;
+			margin: 50px auto;
+
+		}
+		/*三角形*/
+		.dialog:before {
+			position: absolute;
+			top: 50%;
+			left:-20px;
+			transform: translate(0, -50%);
+			content: "";
+			border-top: 10px solid transparent;
+			border-left: 10px solid transparent;
+			border-right: 10px solid #6a6;
+			border-bottom: 10px solid transparent;
+		}
+		.diamond {
+			width: 200px;
+			height: 200px;
+			background-color: #6a6;
+			margin: 100px auto;
+			transform: rotate(45deg);
+		}
+		.paralllel {
+			width: 200px;
+			height: 100px;
+			margin: 100px auto;
+			background-color: #6a6;
+			transform: skew(20deg, 30deg);
+		}
+	</style>
+</head>
+<body>
+	<div class="demo"></div>
+	<div class="dialog">
+		Hello everyone, I'm dyy!
+	</div>
+	<div class="diamond"></div>
+	<div class="paralllel"></div>
+
+</body>
+</html>
