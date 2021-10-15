@@ -1,0 +1,34 @@
+.ceng {
+	width: 260px;
+	height: 200px;
+	border: 1px solid black;
+	background-image: linear-gradient(90deg, orange 30%, green 70%, red);
+}
+.ceng2 {
+	width: 100px;
+	height: 100px;
+	border: 1px solid black;
+	border-radius: 50%;
+	margin: 10px;
+	float: left;
+}
+.circle {
+	background-image: radial-gradient(20px circle at center, orange, green); 
+}
+.ellipse {
+	background-image: radial-gradient(ellipse at right, orange, green); 
+}
+.ceng3 {
+	width: 260px;
+	height: 240px;
+	border: 1px solid black;
+	background-image: repeating-linear-gradient(orange 0px, green 40px, red 80px);
+	clear: both;
+}
+.ceng4 {
+	width: 240px;
+	height: 240px;
+	border-radius: 50%;
+	border: 1px solid black;
+	background-image: repeating-radial-gradient(orange 0px, green 30px, red 40px);
+}

@@ -1,0 +1,16 @@
+.ceng {
+	width: 100px;
+	height: 100px;
+	background-color: pink;
+	cursor: pointer;
+	transition-duration: 2s;
+	transition-property: all;
+	transition-delay: .2s;
+	transition-timing-function: ease-in;
+}
+.ceng:hover {
+	width: 300px;
+	background-color: red;
+	border-radius: 40px;
+	/*height: 150px;*/
+}
